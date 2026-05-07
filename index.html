@@ -172,12 +172,18 @@
       <h2 class="feature-title">把这只兔子<br/>带回家。</h2>
       <p class="feature-sub center">macOS 11 或更高版本。免费。</p>
       <div class="download-actions">
-        <a href="#" class="btn-pill">下载 macOS · Universal</a>
+        <a
+          id="downloadMac"
+          href="https://api.123offer.cn/fatding/api/public/desktop/latest?platform=macos&channel=stable"
+          class="btn-pill"
+          data-download-endpoint="https://api.123offer.cn/fatding/api/public/desktop/latest?platform=macos&channel=stable"
+        >下载 macOS · Universal</a>
       </div>
-      <p class="download-meta">同时支持 Apple Silicon 与 Intel</p>
+      <p class="download-meta" id="downloadMeta">同时支持 Apple Silicon 与 Intel</p>
+      <p class="download-error" id="downloadError" role="status" aria-live="polite" hidden></p>
       <dl class="specs">
         <div><dt>系统</dt><dd>macOS 11+</dd></div>
-        <div><dt>大小</dt><dd>≈ 180 MB</dd></div>
+        <div><dt>大小</dt><dd id="downloadSize">获取中</dd></div>
         <div><dt>价格</dt><dd>免费下载</dd></div>
       </dl>
     </section>
