@@ -32,7 +32,7 @@
     <!-- HERO -->
     <section class="hero">
       <p class="kicker">胖丁 for Mac</p>
-      <h1 class="hero-title">陪你写作。</h1>
+      <h1 class="hero-title">你的写作搭子</h1>
       <p class="hero-sub">一只小兔子，一个 Markdown 编辑器，<br/>和恰到好处的 AI。</p>
       <div class="hero-links">
         <a href="#download" class="link-cta">下载 macOS 版 ›</a>
@@ -107,7 +107,7 @@
         <h2 class="feature-title">四个动作，<br/>写完一篇好文档。</h2>
       </div>
       <div class="cap-grid">
-        <article class="cap">
+        <article class="cap" data-cap="polish" tabindex="0" role="button" aria-label="查看润色截图">
           <h3>润色</h3>
           <p>保留你的语气，只把句子磨得更顺。</p>
           <div class="cap-demo">
@@ -115,8 +115,9 @@
             <span class="demo-arrow">→</span>
             <span class="demo-new">城市像一张被雨泡软的纸，连灯光都洇开了。</span>
           </div>
+          <span class="cap-cta">看截图 ›</span>
         </article>
-        <article class="cap">
+        <article class="cap" data-cap="summary" tabindex="0" role="button" aria-label="查看摘要截图">
           <h3>摘要</h3>
           <p>长文一段话讲清楚，会议、报告、笔记都行。</p>
           <div class="cap-demo">
@@ -124,8 +125,9 @@
             <span class="demo-arrow">→</span>
             <span class="demo-new">三句话，把这段读完。</span>
           </div>
+          <span class="cap-cta">看截图 ›</span>
         </article>
-        <article class="cap">
+        <article class="cap" data-cap="title" tabindex="0" role="button" aria-label="查看标题截图">
           <h3>标题</h3>
           <p>读懂全文再下笔。不是关键词，是钩子。</p>
           <div class="cap-demo">
@@ -133,8 +135,9 @@
             <span class="demo-arrow">→</span>
             <span class="demo-new">关于雨夜，和一杯泡软的茶</span>
           </div>
+          <span class="cap-cta">看截图 ›</span>
         </article>
-        <article class="cap">
+        <article class="cap" data-cap="image" tabindex="0" role="button" aria-label="查看配图截图">
           <h3>配图</h3>
           <p>给段落生成一张插图，原生 Markdown 语法插入。</p>
           <div class="cap-demo">
@@ -142,6 +145,7 @@
             <span class="demo-arrow">→</span>
             <span class="demo-new">![雨夜](rain-night.png)</span>
           </div>
+          <span class="cap-cta">看截图 ›</span>
         </article>
       </div>
     </section>
@@ -168,9 +172,9 @@
       <h2 class="feature-title">把这只兔子<br/>带回家。</h2>
       <p class="feature-sub center">macOS 11 或更高版本。免费。</p>
       <div class="download-actions">
-        <a href="#" class="btn-pill">下载 macOS（Apple Silicon）</a>
-        <a href="#" class="btn-pill ghost">Intel 版本</a>
+        <a href="#" class="btn-pill">下载 macOS · Universal</a>
       </div>
+      <p class="download-meta">同时支持 Apple Silicon 与 Intel</p>
       <dl class="specs">
         <div><dt>系统</dt><dd>macOS 11+</dd></div>
         <div><dt>大小</dt><dd>≈ 180 MB</dd></div>
@@ -206,6 +210,130 @@
       </div>
     </div>
   </footer>
+
+  <!-- ============ Capability mockup modal ============ -->
+  <div class="modal" id="capModal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-frame" role="document">
+      <button class="modal-close" type="button" data-close aria-label="关闭">
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ============ Mockup templates ============ -->
+  <template id="mock-polish">
+    <div class="mock-meta"><span class="mock-tag">润色</span><h3 id="modalTitle">原句保留语气，只把它磨得更顺</h3></div>
+    <div class="mock-win">
+      <div class="mock-bar"><span></span><span></span><span></span><em>关于雨夜.md</em></div>
+      <div class="mock-page">
+        <h4># 关于雨夜</h4>
+        <p>窗外的雨从傍晚一直下到现在。<mark class="mock-sel">城市像被泡软的纸。</mark></p>
+        <p>我泡了一杯热茶，敲下今天的第一行字。</p>
+        <div class="mock-toolbar">
+          <span class="mock-pet"><img src="./assets/avatar.png" alt=""/></span>
+          <span class="mock-divider"></span>
+          <button class="active">润色</button>
+          <button>摘要</button>
+          <button>标题</button>
+          <button>配图</button>
+        </div>
+        <div class="mock-popover">
+          <header><span class="dot-yellow"></span>润色后</header>
+          <p>城市像一张被雨泡软的纸，连灯光都洇开了。</p>
+          <footer>
+            <button class="primary">采用</button>
+            <button>再来一次</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="mock-summary">
+    <div class="mock-meta"><span class="mock-tag">摘要</span><h3 id="modalTitle">长文一段话讲清楚</h3></div>
+    <div class="mock-win">
+      <div class="mock-bar"><span></span><span></span><span></span><em>会议纪要.md</em></div>
+      <div class="mock-page">
+        <h4># 11 月产品周会纪要</h4>
+        <p class="mock-sel-block">本周完成了胖丁选区工具栏的最终视觉，确定了"润色 / 摘要 / 标题 / 配图"四个动作的入口。下一阶段重点：服务端的能力额度统计、降级策略、以及多模型分发的灰度方案。客户端会先在内部 dogfood 两周，预计 12 月初放给小范围 beta 用户。设计上同步推进了官网原型，目标是"产品色 + 兔子人格"两条线…</p>
+        <div class="mock-toolbar">
+          <span class="mock-pet"><img src="./assets/avatar.png" alt=""/></span>
+          <span class="mock-divider"></span>
+          <button>润色</button>
+          <button class="active">摘要</button>
+          <button>标题</button>
+          <button>配图</button>
+        </div>
+        <div class="mock-popover wide">
+          <header><span class="dot-yellow"></span>三句摘要</header>
+          <ul>
+            <li>本周敲定了胖丁选区工具栏的视觉与四个 AI 入口。</li>
+            <li>下阶段聚焦服务端额度、降级与多模型灰度。</li>
+            <li>12 月初进入小范围 beta，官网原型同步推进。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="mock-title">
+    <div class="mock-meta"><span class="mock-tag">标题</span><h3 id="modalTitle">读懂全文再下笔</h3></div>
+    <div class="mock-win">
+      <div class="mock-bar"><span></span><span></span><span></span><em>未命名草稿.md</em></div>
+      <div class="mock-page">
+        <h4 class="placeholder"># 未命名草稿</h4>
+        <p>窗外的雨从傍晚一直下到现在。城市像被泡软的纸。</p>
+        <p>我泡了一杯热茶，敲下今天的第一行字。<mark class="mock-sel">想了很久，怎么开头都不对。</mark></p>
+        <div class="mock-toolbar">
+          <span class="mock-pet"><img src="./assets/avatar.png" alt=""/></span>
+          <span class="mock-divider"></span>
+          <button>润色</button>
+          <button>摘要</button>
+          <button class="active">标题</button>
+          <button>配图</button>
+        </div>
+        <div class="mock-popover">
+          <header><span class="dot-yellow"></span>给你三个标题</header>
+          <ol class="mock-titles">
+            <li class="chosen">关于雨夜，和一杯泡软的茶</li>
+            <li>城市被雨泡软的那个傍晚</li>
+            <li>晚来的雨，迟到的字</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="mock-image">
+    <div class="mock-meta"><span class="mock-tag">配图</span><h3 id="modalTitle">给这段配一张图</h3></div>
+    <div class="mock-win">
+      <div class="mock-bar"><span></span><span></span><span></span><em>关于雨夜.md</em></div>
+      <div class="mock-page">
+        <h4># 关于雨夜</h4>
+        <p>窗外的雨从傍晚一直下到现在。城市像被泡软的纸。</p>
+        <div class="mock-image">
+          <div class="mock-image-art" aria-hidden="true">
+            <span class="cloud cloud-1"></span>
+            <span class="cloud cloud-2"></span>
+            <span class="rain"></span>
+            <span class="window-light"></span>
+          </div>
+          <code class="mock-code">![雨夜](rain-night.png)</code>
+        </div>
+        <p>我泡了一杯热茶，敲下今天的第一行字。<span class="mock-cursor"></span></p>
+        <div class="mock-toolbar">
+          <span class="mock-pet"><img src="./assets/avatar.png" alt=""/></span>
+          <span class="mock-divider"></span>
+          <button>润色</button>
+          <button>摘要</button>
+          <button>标题</button>
+          <button class="active">配图</button>
+        </div>
+      </div>
+    </div>
+  </template>
 
   <script src="./script.js"></script>
 </body>
