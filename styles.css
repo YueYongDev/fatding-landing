@@ -460,6 +460,12 @@ section {
 
 /* ============ Modes ============ */
 .modes-section { background: var(--bg); }
+.modes-head {
+  max-width: 720px;
+  margin: 0 auto 72px;
+  text-align: center;
+}
+.modes-head .feature-sub { margin-top: 24px; }
 .mode-grid {
   max-width: 1120px;
   margin: 0 auto;
