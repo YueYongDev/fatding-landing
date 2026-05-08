@@ -226,12 +226,12 @@
       <h2 class="feature-title">是高效工具，<br/>也是贴心桌宠。</h2>
       <p class="feature-sub center">它能感知你的状态。写作时思考，休息时小憩。在孤独的创作时光里，给你一份安静的陪伴。</p>
       <div class="pet-states">
-        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>idle</figcaption></figure>
-        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>sleeping</figcaption></figure>
-        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>thinking</figcaption></figure>
-        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>curious</figcaption></figure>
-        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>happy</figcaption></figure>
-        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>concerned</figcaption></figure>
+        <figure class="ps-idle"><div class="ps"><img src="./assets/avatar.png" alt="idle" /></div><figcaption>idle</figcaption></figure>
+        <figure class="ps-sleeping"><div class="ps"><img src="./assets/avatar.png" alt="sleeping" /></div><figcaption>sleeping</figcaption></figure>
+        <figure class="ps-thinking"><div class="ps"><img src="./assets/avatar.png" alt="thinking" /></div><figcaption>thinking</figcaption></figure>
+        <figure class="ps-curious"><div class="ps"><img src="./assets/avatar.png" alt="curious" /></div><figcaption>curious</figcaption></figure>
+        <figure class="ps-happy"><div class="ps"><img src="./assets/avatar.png" alt="happy" /></div><figcaption>happy</figcaption></figure>
+        <figure class="ps-concerned"><div class="ps"><img src="./assets/avatar.png" alt="concerned" /></div><figcaption>concerned</figcaption></figure>
       </div>
     </section>
 
@@ -246,45 +246,27 @@
         </button>
       </div>
       <p class="download-error" id="downloadError" role="status" aria-live="polite" hidden></p>
-      <dl class="specs">
-        <div><dt>当前版本</dt><dd id="downloadVersion">获取中</dd></div>
-        <div><dt>文件大小</dt><dd id="downloadSize">获取中</dd></div>
-        <div><dt>软件价格</dt><dd>免费</dd></div>
-      </dl>
+      <p class="download-meta" id="downloadMeta"></p>
     </section>
   </main>
 
   <footer>
     <div class="footer-inner">
-      <div class="footer-top">
+      <div class="footer-brand-row">
         <div class="footer-brand">
           <img src="./assets/avatar.png" alt="" />
-          <h3>胖丁</h3>
-          <p>陪你写作、整理和修改的 macOS Markdown 编辑器。</p>
+          <span>胖丁</span>
         </div>
-        <div class="footer-cols">
-          <div>
-            <h4>产品</h4>
-            <a href="#features">功能特性</a>
-            <a href="#ai">AI 写作</a>
-            <a href="#pet">桌宠互动</a>
-          </div>
-          <div>
-            <h4>下载</h4>
-            <a href="#download">macOS 版</a>
-            <a href="#">更新日志</a>
-          </div>
-          <div>
-            <h4>资源</h4>
-            <a href="#">使用文档</a>
-            <a href="#">常见问题</a>
-          </div>
-          <div>
-            <h4>关于</h4>
-            <a href="#">反馈建议</a>
-            <a href="#">隐私条款</a>
-          </div>
-        </div>
+        <nav class="footer-nav">
+          <a href="#features">功能特性</a>
+          <a href="#ai">AI 写作</a>
+          <a href="#pet">桌宠互动</a>
+          <a href="#download">下载</a>
+          <a href="#">使用文档</a>
+          <a href="#">常见问题</a>
+          <a href="#">反馈建议</a>
+          <a href="#">隐私条款</a>
+        </nav>
       </div>
       <div class="footer-meta">
         <span>© <span id="year"></span> 胖丁 团队</span>
