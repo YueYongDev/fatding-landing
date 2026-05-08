@@ -31,8 +31,7 @@
   <main>
     <!-- HERO -->
     <section class="hero">
-      <p class="kicker">胖丁</p>
-      <h1 class="hero-title">沉浸式写作，灵感无界</h1>
+      <h1 class="hero-title">沉浸式写作，<br class="mobile-break" />灵感无界</h1>
       <p class="hero-sub">一款轻巧的 Markdown 编辑器。<br/>内置高效 AI 辅助工具，让创作更简单、更纯粹。</p>
       <div class="hero-links">
         <a href="#download" class="link-cta">立即下载 ›</a>
@@ -47,9 +46,8 @@
     <section class="stage">
       <div class="product-shot">
         <div class="product-copy">
-          <p class="kicker">极简界面</p>
           <h2>在文档中，<br/>即时唤醒 AI。</h2>
-          <p>无需切换窗口。选中文字即可发起润色、摘要等任务，AI 处理结果直接应用于文档，保持专注的心流体验。</p>
+          <p>无需切换窗口。选中文字即可润色、摘要或起标题，AI 结果直接回到文档。</p>
         </div>
         <div class="shot-canvas" aria-label="胖丁产品界面示意">
           <div class="mac-window">
@@ -100,9 +98,8 @@
     <!-- MODES -->
     <section id="modes" class="modes-section">
       <div class="modes-head">
-        <p class="kicker">两种模式</p>
-        <h2 class="feature-title">轻量悬浮，<br/>或高效边栏。</h2>
-        <p class="feature-sub center">灵活切换工作形态。无论是快速处理段落，还是深度编辑长文，胖丁都能以最合适的方式陪伴左右。</p>
+        <h2 class="feature-title">悬浮处理，边栏协作。</h2>
+        <p class="feature-sub center">短段落轻量处理，长文档固定协作；在同一篇文稿里顺手完成 AI 辅助。</p>
       </div>
       <div class="mode-grid">
         <article class="mode-panel">
@@ -145,7 +142,6 @@
     <!-- FEATURE: Selection -->
     <section id="features" class="feature">
       <div class="feature-inner">
-        <p class="kicker">直觉交互</p>
         <h2 class="feature-title">选中文字，<br/>即刻开始。</h2>
         <p class="feature-sub">鼠标划过文字，右键浮现快捷工具栏。润色、摘要、起标题或配图，只需一次点击，无需复杂指令。</p>
       </div>
@@ -164,16 +160,17 @@
     <!-- FEATURE: Local first -->
     <section class="feature alt">
       <div class="feature-inner">
-        <p class="kicker">隐私保护</p>
         <h2 class="feature-title">本地存储，<br/>数据由你掌控。</h2>
         <p class="feature-sub">坚守本地优先原则。所有文档以 Markdown 格式保存在本地硬盘，无需上传云端，确保创作隐私与数据安全。</p>
+      </div>
+      <div class="local-visual" aria-label="本地 Markdown 文档和隐私保护示意图">
+        <img src="./assets/local-storage-visual.svg" alt="" />
       </div>
     </section>
 
     <!-- AI Capabilities -->
     <section id="ai" class="capabilities">
       <div class="capabilities-head">
-        <p class="kicker">AI 辅助</p>
         <h2 class="feature-title">更智能的功能，<br/>更简单的创作。</h2>
       </div>
       <div class="cap-grid">
@@ -222,27 +219,59 @@
 
     <!-- PET -->
     <section id="pet" class="pet-section">
-      <p class="kicker">情感陪伴</p>
       <h2 class="feature-title">是高效工具，<br/>也是贴心桌宠。</h2>
       <p class="feature-sub center">它能感知你的状态。写作时思考，休息时小憩。在孤独的创作时光里，给你一份安静的陪伴。</p>
+      <p class="pet-note">自定义形象即将上线。</p>
       <div class="pet-states">
-        <figure class="ps-idle"><div class="ps"><img src="./assets/avatar.png" alt="idle" /></div><figcaption>idle</figcaption></figure>
-        <figure class="ps-sleeping"><div class="ps"><img src="./assets/avatar.png" alt="sleeping" /></div><figcaption>sleeping</figcaption></figure>
-        <figure class="ps-thinking"><div class="ps"><img src="./assets/avatar.png" alt="thinking" /></div><figcaption>thinking</figcaption></figure>
-        <figure class="ps-curious"><div class="ps"><img src="./assets/avatar.png" alt="curious" /></div><figcaption>curious</figcaption></figure>
-        <figure class="ps-happy"><div class="ps"><img src="./assets/avatar.png" alt="happy" /></div><figcaption>happy</figcaption></figure>
-        <figure class="ps-concerned"><div class="ps"><img src="./assets/avatar.png" alt="concerned" /></div><figcaption>concerned</figcaption></figure>
+        <figure>
+          <div class="ps"><img src="./assets/avatar.png" alt="idle" /></div>
+          <figcaption>idle</figcaption>
+        </figure>
+        <figure>
+          <div class="ps">
+            <img src="./assets/avatar.png" alt="sleeping" />
+            <span class="ps-badge text-badge">z</span>
+          </div>
+          <figcaption>sleeping</figcaption>
+        </figure>
+        <figure>
+          <div class="ps">
+            <img src="./assets/avatar.png" alt="thinking" />
+            <span class="ps-badge thinking-badge"><i></i><i></i><i></i></span>
+          </div>
+          <figcaption>thinking</figcaption>
+        </figure>
+        <figure>
+          <div class="ps">
+            <img src="./assets/avatar.png" alt="curious" />
+            <span class="ps-badge text-badge">✎</span>
+          </div>
+          <figcaption>curious</figcaption>
+        </figure>
+        <figure>
+          <div class="ps">
+            <img src="./assets/avatar.png" alt="happy" />
+            <span class="ps-badge text-badge happy">+</span>
+          </div>
+          <figcaption>happy</figcaption>
+        </figure>
+        <figure>
+          <div class="ps">
+            <img src="./assets/avatar.png" alt="concerned" />
+            <span class="ps-badge text-badge">?</span>
+          </div>
+          <figcaption>concerned</figcaption>
+        </figure>
       </div>
     </section>
 
     <!-- DOWNLOAD -->
     <section id="download" class="download">
-      <p class="kicker">免费获取</p>
       <h2 class="feature-title">立即下载，<br/>开启创作。</h2>
       <p class="feature-sub center">支持 macOS 11 或更高版本。</p>
       <div class="download-actions">
         <button id="downloadMac" class="btn-pill" data-download-endpoint="https://api.123offer.cn/fatding/api/public/desktop/latest?platform=macos&channel=stable">
-          下载 macOS 版 (Universal)
+          下载 macOS 版
         </button>
       </div>
       <p class="download-error" id="downloadError" role="status" aria-live="polite" hidden></p>
