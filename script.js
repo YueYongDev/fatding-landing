@@ -68,6 +68,7 @@ document.addEventListener('keydown', (e) => {
 // Desktop download
 const downloadButton = document.getElementById('downloadMac');
 const downloadMeta = document.getElementById('downloadMeta');
+const downloadVersion = document.getElementById('downloadVersion');
 const downloadSize = document.getElementById('downloadSize');
 const downloadError = document.getElementById('downloadError');
 
@@ -92,6 +93,9 @@ function getDownloadUrl (release) {
 function updateDownloadInfo (release) {
   if (downloadMeta && release.version) {
     downloadMeta.textContent = `v${release.version} · 同时支持 Apple Silicon 与 Intel`;
+  }
+  if (downloadVersion && release.version) {
+    downloadVersion.textContent = `v${release.version}`;
   }
 
   const size = formatBytes(Number(release.size));
@@ -134,6 +138,7 @@ if (downloadButton) {
   fetchLatestDesktopRelease()
     .then(updateDownloadInfo)
     .catch(() => {
+      if (downloadVersion) downloadVersion.textContent = '未知';
       if (downloadSize) downloadSize.textContent = '未知';
     });
 
