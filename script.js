@@ -92,7 +92,7 @@ function getDownloadUrl (release) {
 
 function updateDownloadInfo (release) {
   if (downloadMeta && release.version) {
-    downloadMeta.textContent = `v${release.version} · 同时支持 Apple Silicon 与 Intel`;
+    downloadMeta.textContent = `v${release.version} · Apple Silicon / Intel`;
   }
   if (downloadVersion && release.version) {
     downloadVersion.textContent = `v${release.version}`;

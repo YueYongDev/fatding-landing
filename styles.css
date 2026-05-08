@@ -403,7 +403,38 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  background: linear-gradient(140deg, #171d26 0%, #1e3348 100%);
+  background:
+    radial-gradient(circle at 76% 18%, rgba(255, 230, 172, 0.95) 0 17px, rgba(255, 230, 172, 0.16) 18px 44px, transparent 45px),
+    linear-gradient(150deg, #283f53 0%, #172536 54%, #101a27 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+.rain-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(108deg, rgba(255, 255, 255, 0.28) 0 1px, transparent 1px 16px),
+    radial-gradient(circle at 20% 72%, rgba(244, 197, 111, 0.72) 0 4px, transparent 5px),
+    radial-gradient(circle at 35% 82%, rgba(244, 197, 111, 0.48) 0 3px, transparent 4px),
+    radial-gradient(circle at 62% 74%, rgba(244, 197, 111, 0.58) 0 3px, transparent 4px);
+  opacity: 0.52;
+}
+.rain-image::after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  width: 116px;
+  height: 72px;
+  border: 1px solid rgba(246, 224, 184, 0.86);
+  border-radius: 14px 14px 8px 8px;
+  background:
+    linear-gradient(90deg, transparent 48%, rgba(162, 116, 49, 0.18) 49%, rgba(162, 116, 49, 0.18) 51%, transparent 52%),
+    linear-gradient(180deg, rgba(255, 253, 246, 0.94), rgba(247, 225, 186, 0.72));
+  box-shadow:
+    0 18px 36px rgba(2, 10, 18, 0.24),
+    145px 26px 0 -22px rgba(244, 197, 111, 0.55),
+    178px 10px 0 -24px rgba(255, 250, 235, 0.48);
 }
 .panel-actions {
   display: flex;
@@ -910,15 +941,24 @@ section {
   background: var(--bg);
   padding-top: 56px;
   padding-bottom: 72px;
+}
+.download-inner {
+  width: min(100%, 360px);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .download .feature-title {
+  width: 100%;
   font-size: 56px;
   line-height: 1.08;
 }
-.download .feature-sub { margin-top: 24px; }
+.download .feature-sub {
+  width: 100%;
+  margin-top: 24px;
+}
 .download-actions {
   margin-top: 18px;
   display: flex;
@@ -931,6 +971,7 @@ section {
   font-size: 16px;
   font-weight: 700;
   min-width: 260px;
+  width: min(100%, 300px);
   padding: 15px 36px;
   border-radius: 980px;
   box-shadow: var(--shadow-lg);
@@ -945,13 +986,19 @@ section {
   margin-top: 14px;
   color: #b34b2f;
   font-size: 14px;
+  text-align: center;
 }
 .download-meta {
+  width: 100%;
+  max-width: 320px;
   margin-top: 18px;
   color: var(--ink-mute);
   font-size: 13px;
   font-family: var(--mono);
+  line-height: 1.5;
   min-height: 20px;
+  text-align: center;
+  word-break: keep-all;
 }
 
 /* ============ Footer ============ */
@@ -1068,11 +1115,11 @@ footer {
     gap: 28px 20px;
   }
   .download { padding-top: 48px; padding-bottom: 64px; }
+  .download-inner { width: min(100%, 340px); }
   .download .feature-title { font-size: 44px; }
   .btn-pill {
     min-width: 0;
-    width: 100%;
-    max-width: 360px;
+    width: min(100%, 300px);
   }
   footer { padding: 32px 24px 24px; }
   .footer-brand-row {

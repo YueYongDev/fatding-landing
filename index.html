@@ -267,15 +267,17 @@
 
     <!-- DOWNLOAD -->
     <section id="download" class="download">
-      <h2 class="feature-title">立即下载，<br/>开启创作。</h2>
-      <p class="feature-sub center">支持 macOS 11 或更高版本。</p>
-      <div class="download-actions">
-        <button id="downloadMac" class="btn-pill" data-download-endpoint="https://api.123offer.cn/fatding/api/public/desktop/latest?platform=macos&channel=stable">
-          下载 macOS 版
-        </button>
+      <div class="download-inner">
+        <h2 class="feature-title">立即下载，<br/>开启创作。</h2>
+        <p class="feature-sub center">支持 macOS 11 或更高版本。</p>
+        <div class="download-actions">
+          <button id="downloadMac" class="btn-pill" data-download-endpoint="https://api.123offer.cn/fatding/api/public/desktop/latest?platform=macos&channel=stable">
+            下载 macOS 版
+          </button>
+        </div>
+        <p class="download-error" id="downloadError" role="status" aria-live="polite" hidden></p>
+        <p class="download-meta" id="downloadMeta"></p>
       </div>
-      <p class="download-error" id="downloadError" role="status" aria-live="polite" hidden></p>
-      <p class="download-meta" id="downloadMeta"></p>
     </section>
   </main>
 
