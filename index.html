@@ -20,9 +20,9 @@
       </a>
       <nav class="nav-links">
         <a href="#features">功能</a>
+        <a href="#modes">模式</a>
         <a href="#ai">AI 写作</a>
         <a href="#pet">桌宠</a>
-        <a href="#download">下载</a>
       </nav>
       <a href="#download" class="nav-cta">下载</a>
     </div>
@@ -45,28 +45,113 @@
 
     <!-- PRODUCT SHOT -->
     <section class="stage">
-      <div class="window">
-        <div class="window-bar">
-          <span class="dot dot-r"></span>
-          <span class="dot dot-y"></span>
-          <span class="dot dot-g"></span>
-          <span class="title">关于雨夜.md</span>
+      <div class="product-shot">
+        <div class="product-copy">
+          <p class="kicker">产品界面</p>
+          <h2>写作区旁边，<br/>就是胖丁。</h2>
+          <p>选中文字、发起任务、确认结果，都在当前文档里完成。需要时它出现，不需要时安静待着。</p>
         </div>
-        <div class="window-body">
-          <div class="doc">
-            <h3># 关于雨夜</h3>
-            <p>窗外的雨从傍晚一直下到现在。<span class="hl">城市像被泡软的纸。</span></p>
-            <p>我泡了一杯热茶，敲下今天的<span class="cursor"></span></p>
-            <div class="sel-toolbar" aria-hidden="true">
-              <div class="sel-pet"><img src="./assets/avatar.png" alt="" /></div>
-              <span class="sel-divider"></span>
-              <button>润色</button>
-              <button>摘要</button>
-              <button>标题</button>
-              <button>配图</button>
+        <div class="shot-canvas" aria-label="胖丁悬浮窗模式产品截图示意">
+          <div class="mac-window">
+            <div class="mac-traffic"><i></i><i></i><i></i></div>
+            <div class="mac-path">Users › yueyong › Desktop › # 关于雨夜.md</div>
+            <div class="word-count">45 词⌃</div>
+          </div>
+          <div class="editor-sheet">
+            <h3>关于雨夜</h3>
+            <p class="with-marker">窗外的雨从傍晚一直下到现在。城市像被泡软的纸。</p>
+            <p>我泡了一杯热茶，敲下今天的第一行文字。</p>
+          </div>
+          <aside class="fatding-panel floating-panel">
+            <header class="panel-head">
+              <img src="./assets/avatar.png" alt="" />
+              <div>
+                <strong>胖丁 <span>PRO</span></strong>
+                <p>正在帮你处理一段...</p>
+              </div>
+              <em>▢</em>
+              <em>×</em>
+            </header>
+            <div class="tool-row">
+              <b class="purple">润色</b>
+              <b class="orange">标题</b>
+              <b class="cyan">摘要</b>
+              <b class="pink">配图</b>
             </div>
+            <div class="task-bar">
+              <small>‹ 主对话</small>
+              <div><strong>配图工作台</strong><span>选区</span></div>
+              <mark>待确认</mark>
+            </div>
+            <div class="preview-block">
+              <span>预览</span>
+              <div class="rain-image" aria-hidden="true">
+                <i class="lamp"></i>
+                <i class="cup"></i>
+                <i class="city"></i>
+                <i class="hand"></i>
+              </div>
+            </div>
+            <div class="panel-actions">
+              <button>放弃</button>
+              <button class="green">上传并插入</button>
+            </div>
+            <div class="panel-input"><span>完成这段任务后再聊...</span><b>→</b></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- MODES -->
+    <section id="modes" class="modes-section">
+      <div class="modes-head">
+        <p class="kicker">两种模式</p>
+        <h2 class="feature-title">想轻一点，悬浮。<br/>想一直陪着，边栏。</h2>
+        <p class="feature-sub center">胖丁可以像小工具一样悬在文档旁，也可以固定成右侧边栏。写短句、改长文、做配图，都不用离开当前上下文。</p>
+      </div>
+      <div class="mode-grid">
+        <article class="mode-panel">
+          <div class="mode-copy">
+            <span>悬浮窗模式</span>
+            <h3>临时叫出来，用完就收起。</h3>
+            <p>适合快速润色、起标题、看一眼摘要。窗口轻，不占版面，贴着你正在处理的段落。</p>
+          </div>
+          <div class="mode-visual float-visual" aria-hidden="true">
+            <div class="mini-doc">
+              <strong>关于雨夜</strong>
+              <p>窗外的雨从傍晚一直下到现在。城市像被泡软的纸。</p>
+              <p>我泡了一杯热茶，敲下今天的</p>
+            </div>
+            <div class="mini-panel">
+              <div class="mini-head"><img src="./assets/avatar.png" alt="" /><b>胖丁</b><span>PRO</span></div>
+              <div class="mini-tools"><i></i><i></i><i></i><i></i></div>
+              <p>雨夜记录</p>
+              <p>我正在想标题...</p>
+              <div class="mini-input"></div>
+            </div>
+          </div>
+        </article>
+        <article class="mode-panel">
+          <div class="mode-copy">
+            <span>边栏模式</span>
+            <h3>固定在右边，跟着整篇文档走。</h3>
+            <p>适合长文编辑和连续任务。原文、建议、历史版本和插入动作都在边栏里排清楚。</p>
+          </div>
+          <div class="mode-visual sidebar-visual" aria-hidden="true">
+            <div class="wide-doc">
+              <strong>关于雨夜</strong>
+              <p>窗外的雨从傍晚一直下到现在。城市像被泡软的纸。</p>
+              <div class="inserted-image"></div>
+            </div>
+            <div class="side-panel">
+              <div class="mini-head"><img src="./assets/avatar.png" alt="" /><b>胖丁</b><span>PRO</span></div>
+              <div class="work-card active"><b>配图 · 选区 · 已插入</b><small>2 分钟前 ›</small></div>
+              <div class="work-card"><b>润色 · 选区</b><small>刚刚 ›</small></div>
+              <p>傍晚至今雨不断，城市如泡软纸，我泡茶开始写作。</p>
+              <div class="mini-input"></div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 

@@ -10,10 +10,17 @@ const io = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.feature, .capabilities, .pet-section, .download, .stage').forEach((el) => {
+document.querySelectorAll('.feature, .capabilities, .pet-section, .download, .stage, .modes-section').forEach((el) => {
   el.classList.add('reveal');
   io.observe(el);
 });
+
+if (window.location.hash) {
+  const target = document.querySelector(window.location.hash);
+  if (target && target.classList.contains('reveal')) {
+    target.classList.add('in');
+  }
+}
 
 // Capability mockup modal
 const modal = document.getElementById('capModal');
