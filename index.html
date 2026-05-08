@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="胖丁 — 懂你的 macOS 沉浸式 Markdown 写作伴侣。" />
+  <meta name="description" content="胖丁 — 专为 macOS 打造的沉浸式 Markdown 编辑器。" />
   <meta property="og:title" content="胖丁" />
-  <meta property="og:description" content="一款极具温度的 macOS Markdown 编辑器。" />
+  <meta property="og:description" content="沉浸式写作，集成高效 AI 辅助。" />
   <meta property="og:image" content="./assets/avatar.png" />
-  <title>胖丁 — 懂你的 macOS 沉浸式 Markdown 写作伴侣</title>
+  <title>胖丁 — 沉浸式 Markdown 写作编辑器</title>
   <link rel="icon" type="image/png" href="./assets/avatar.png" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -19,24 +19,24 @@
         <span>胖丁</span>
       </a>
       <nav class="nav-links">
-        <a href="#features">灵感</a>
-        <a href="#modes">形态</a>
-        <a href="#ai">雕琢</a>
-        <a href="#pet">伙伴</a>
+        <a href="#features">功能</a>
+        <a href="#modes">模式</a>
+        <a href="#ai">AI 写作</a>
+        <a href="#pet">桌宠</a>
       </nav>
-      <a href="#download" class="nav-cta">立即开始</a>
+      <a href="#download" class="nav-cta">免费下载</a>
     </div>
   </header>
 
   <main>
     <!-- HERO -->
     <section class="hero">
-      <p class="kicker">胖丁 for Mac</p>
-      <h1 class="hero-title">灵感常在，胖丁随行</h1>
-      <p class="hero-sub">一款极具温度的 macOS Markdown 编辑器。<br/>是聪慧的 AI 助手，更是静候在旁的写作知己。</p>
+      <p class="kicker">胖丁 for macOS</p>
+      <h1 class="hero-title">沉浸式写作，灵感无界</h1>
+      <p class="hero-sub">专为 macOS 打造的 Markdown 编辑器。<br/>内置高效 AI 辅助工具，让创作更简单、更纯粹。</p>
       <div class="hero-links">
-        <a href="#download" class="link-cta">开启写作旅程 ›</a>
-        <a href="#features" class="link-secondary">探索奥秘 ›</a>
+        <a href="#download" class="link-cta">立即下载 ›</a>
+        <a href="#features" class="link-secondary">查看功能 ›</a>
       </div>
       <div class="hero-art">
         <img src="./assets/avatar.png" alt="胖丁" class="hero-avatar" />
@@ -47,15 +47,15 @@
     <section class="stage">
       <div class="product-shot">
         <div class="product-copy">
-          <p class="kicker">产品界面</p>
-          <h2>灵感涌现时，<br/>它就在手边。</h2>
-          <p>选中、唤醒、创作，一切都在你的心流中无缝流转。它知退进，懂分寸——需要时应声而出，沉浸时默守一旁。</p>
+          <p class="kicker">极简界面</p>
+          <h2>在文档中，<br/>即时唤醒 AI。</h2>
+          <p>无需切换窗口。选中文字即可发起润色、摘要等任务，AI 处理结果直接应用于文档，保持专注的心流体验。</p>
         </div>
-        <div class="shot-canvas" aria-label="胖丁悬浮窗模式产品截图示意">
+        <div class="shot-canvas" aria-label="胖丁产品界面示意">
           <div class="mac-window">
             <div class="mac-traffic"><i></i><i></i><i></i></div>
-            <div class="mac-path">Users › yueyong › Desktop › # 关于雨夜.md</div>
-            <div class="word-count">45 词⌃</div>
+            <div class="mac-path"># 关于雨夜.md</div>
+            <div class="word-count">45 词</div>
           </div>
           <div class="editor-sheet">
             <h3>关于雨夜</h3>
@@ -67,7 +67,7 @@
               <img src="./assets/avatar.png" alt="" />
               <div>
                 <strong>胖丁 <span>PRO</span></strong>
-                <p>正在帮你处理一段...</p>
+                <p>智能助手就绪</p>
               </div>
               <em>▢</em>
               <em>×</em>
@@ -79,25 +79,20 @@
               <b class="pink">配图</b>
             </div>
             <div class="task-bar">
-              <small>‹ 主对话</small>
-              <div><strong>配图工作台</strong><span>选区</span></div>
-              <mark>待确认</mark>
+              <small>‹ 返回</small>
+              <div><strong>智能配图</strong><span>当前选区</span></div>
+              <mark>生成中</mark>
             </div>
             <div class="preview-block">
               <span>预览</span>
-              <div class="rain-image" aria-hidden="true">
-                <i class="lamp"></i>
-                <i class="cup"></i>
-                <i class="city"></i>
-                <i class="hand"></i>
-              </div>
+              <div class="rain-image"></div>
             </div>
             <div class="panel-actions">
-              <button>放弃</button>
-              <button class="green">上传并插入</button>
+              <button>重试</button>
+              <button class="green">插入文档</button>
             </div>
-            <div class="panel-input"><span>完成这段任务后再聊...</span><b>→</b></div>
-          </div>
+            <div class="panel-input"><span>输入指令...</span><b>→</b></div>
+          </aside>
         </div>
       </div>
     </section>
@@ -105,28 +100,26 @@
     <!-- MODES -->
     <section id="modes" class="modes-section">
       <div class="modes-head">
-        <p class="kicker">形态切换</p>
-        <h2 class="feature-title">轻盈悬浮，或<br/>静谧长伴。</h2>
-        <p class="feature-sub center">随心所欲的形态切换。轻巧的悬浮窗帮你捕捉转瞬即逝的灵感；稳固的侧边栏陪你完成长篇巨著的雕琢。</p>
+        <p class="kicker">两种模式</p>
+        <h2 class="feature-title">轻量悬浮，<br/>或高效边栏。</h2>
+        <p class="feature-sub center">灵活切换工作形态。无论是快速处理段落，还是深度编辑长文，胖丁都能以最合适的方式陪伴左右。</p>
       </div>
       <div class="mode-grid">
         <article class="mode-panel">
           <div class="mode-copy">
             <span>悬浮窗模式</span>
-            <h3>轻若无物，呼之即来。</h3>
-            <p>适合快速润色、起标题、看一眼摘要。窗口轻，不占版面，贴着你正在处理的段落。</p>
+            <h3>随处调用，用完即走。</h3>
+            <p>贴合当前段落，适合快速润色、起标题或查看摘要。窗口极轻，不占用宝贵的写作空间。</p>
           </div>
-          <div class="mode-visual float-visual" aria-hidden="true">
+          <div class="mode-visual">
             <div class="mini-doc">
-              <strong>关于雨夜</strong>
-              <p>窗外的雨从傍晚一直下到现在。城市像被泡软的纸。</p>
-              <p>我泡了一杯热茶，敲下今天的</p>
+              <strong>文档标题</strong>
+              <p>内容段落正在编辑中...</p>
             </div>
             <div class="mini-panel">
-              <div class="mini-head"><img src="./assets/avatar.png" alt="" /><b>胖丁</b><span>PRO</span></div>
+              <div class="mini-head"><img src="./assets/avatar.png" alt="" /><b>胖丁</b></div>
               <div class="mini-tools"><i></i><i></i><i></i><i></i></div>
-              <p>雨夜记录</p>
-              <p>我正在想标题...</p>
+              <p>正在生成建议...</p>
               <div class="mini-input"></div>
             </div>
           </div>
@@ -134,20 +127,14 @@
         <article class="mode-panel">
           <div class="mode-copy">
             <span>边栏模式</span>
-            <h3>稳如磐石，全程护航。</h3>
-            <p>适合长文编辑和连续任务。原文、建议、历史版本和插入动作都在边栏里排清楚。</p>
+            <h3>固定侧边，深度协作。</h3>
+            <p>适合处理长篇文稿和连续性 AI 任务。原文、建议与历史版本清晰排列，操作更稳健。</p>
           </div>
-          <div class="mode-visual sidebar-visual" aria-hidden="true">
-            <div class="wide-doc">
-              <strong>关于雨夜</strong>
-              <p>窗外的雨 from 傍晚下到现在。城市像被泡软的纸。</p>
-              <div class="inserted-image"></div>
-            </div>
+          <div class="mode-visual">
             <div class="side-panel">
-              <div class="mini-head"><img src="./assets/avatar.png" alt="" /><b>胖丁</b><span>PRO</span></div>
-              <div class="work-card active"><b>配图 · 选区 · 已插入</b><small>2 分钟前 ›</small></div>
-              <div class="work-card"><b>润色 · 选区</b><small>刚刚 ›</small></div>
-              <p>傍晚至今雨不断，城市如泡软纸，我泡茶开始写作。</p>
+              <div class="mini-head"><img src="./assets/avatar.png" alt="" /><b>胖丁</b></div>
+              <div class="work-card active"><b>智能润色</b><small>刚刚</small></div>
+              <div class="work-card"><b>提取摘要</b><small>2 分钟前</small></div>
               <div class="mini-input"></div>
             </div>
           </div>
@@ -158,18 +145,18 @@
     <!-- FEATURE: Selection -->
     <section id="features" class="feature">
       <div class="feature-inner">
-        <p class="kicker">笔锋所至</p>
-        <h2 class="feature-title">笔锋所至，<br/>灵感即现。</h2>
-        <p class="feature-sub">笔尖划过，工具轻盈浮现。润色词句、萃取摘要、点睛标题或描摹配图——所见即所得，让你的创作心流不被任何窗口切换所打断。</p>
+        <p class="kicker">直觉交互</p>
+        <h2 class="feature-title">选中文字，<br/>即刻开始。</h2>
+        <p class="feature-sub">鼠标划过文字，快捷工具栏无感浮现。润色、摘要、起标题或配图，只需一次点击，无需复杂指令。</p>
       </div>
       <div class="feature-art toolbar-art">
-        <div class="sel-toolbar floating">
+        <div class="sel-toolbar">
           <div class="sel-pet"><img src="./assets/avatar.png" alt="" /></div>
           <span class="sel-divider"></span>
-          <button>润色</button>
-          <button>摘要</button>
-          <button>标题</button>
-          <button>配图</button>
+          <button>智能润色</button>
+          <button>摘要提取</button>
+          <button>自动标题</button>
+          <button>一键配图</button>
         </div>
       </div>
     </section>
@@ -177,96 +164,91 @@
     <!-- FEATURE: Local first -->
     <section class="feature alt">
       <div class="feature-inner">
-        <p class="kicker">数据主权</p>
-        <h2 class="feature-title">你的心血，<br/>本该只属于你。</h2>
-        <p class="feature-sub">坚守本地优先。文档以纯粹的 Markdown 格式静息在你的硬盘里，无惧网络中断，无谓隐私泄露。你的每一次落笔，都无比安全。</p>
+        <p class="kicker">隐私保护</p>
+        <h2 class="feature-title">本地存储，<br/>数据由你掌控。</h2>
+        <p class="feature-sub">坚守本地优先原则。所有文档以 Markdown 格式保存在本地硬盘，无需上传云端，确保创作隐私与数据安全。</p>
       </div>
     </section>
 
     <!-- AI Capabilities -->
     <section id="ai" class="capabilities">
       <div class="capabilities-head">
-        <p class="kicker">灵感雕琢</p>
-        <h2 class="feature-title">细腻的打磨，<br/>成就优雅的表达。</h2>
+        <p class="kicker">AI 辅助</p>
+        <h2 class="feature-title">更智能的功能，<br/>更简单的创作。</h2>
       </div>
       <div class="cap-grid">
-        <article class="cap" data-cap="polish" tabindex="0" role="button" aria-label="查看润色截图">
-          <h3>推敲词句</h3>
-          <p>保留你的独特语感，让文字如泉水般自然流淌。</p>
+        <article class="cap" data-cap="polish">
+          <h3>智能润色</h3>
+          <p>优化语言表达，修正错别字，同时保留你的原始语气。</p>
           <div class="cap-demo">
             <span class="demo-old">城市像被泡软的纸。</span>
             <span class="demo-arrow">→</span>
-            <span class="demo-new">城市像一张被雨泡软的纸，连灯光都洇开了。</span>
+            <span class="demo-new">城市像一张被雨泡软的纸，灯光在雾气中漫开。</span>
           </div>
-          <span class="cap-cta">查看演示 ›</span>
+          <span class="cap-cta">查看功能 ›</span>
         </article>
-        <article class="cap" data-cap="summary" tabindex="0" role="button" aria-label="查看摘要截图">
-          <h3>提纲挈领</h3>
-          <p>拨云见日，从繁杂的篇幅中精准萃取真义。</p>
+        <article class="cap" data-cap="summary">
+          <h3>提取摘要</h3>
+          <p>快速分析长篇内容，精准提炼核心观点，节省阅读时间。</p>
           <div class="cap-demo">
-            <span class="demo-old">…长长的一整段…</span>
+            <span class="demo-old">…长篇大论的段落…</span>
             <span class="demo-arrow">→</span>
-            <span class="demo-new">三句话，把这段读完。</span>
+            <span class="demo-new">提炼为三句核心要点。</span>
           </div>
-          <span class="cap-cta">查看演示 ›</span>
+          <span class="cap-cta">查看功能 ›</span>
         </article>
-        <article class="cap" data-cap="title" tabindex="0" role="button" aria-label="查看标题截图">
-          <h3>画龙点睛</h3>
-          <p>懂你所写，为你构思一个过目不忘的惊艳开场。</p>
+        <article class="cap" data-cap="title">
+          <h3>自动标题</h3>
+          <p>基于文章内容生成多个标题选项，总有一个能触动读者。</p>
           <div class="cap-demo">
             <span class="demo-old">未命名草稿</span>
             <span class="demo-arrow">→</span>
-            <span class="demo-new">关于雨夜，和一杯泡软的茶</span>
+            <span class="demo-new">关于雨夜的灵感片段</span>
           </div>
-          <span class="cap-cta">查看演示 ›</span>
+          <span class="cap-cta">查看功能 ›</span>
         </article>
-        <article class="cap" data-cap="image" tabindex="0" role="button" aria-label="查看配图截图">
-          <h3>文墨生香</h3>
-          <p>化无形为有形，用细腻的笔触为你的段落染上色彩。</p>
+        <article class="cap" data-cap="image">
+          <h3>一键配图</h3>
+          <p>根据段落语义自动生成插图，让你的文档图文并茂。</p>
           <div class="cap-demo">
-            <span class="demo-old">需要一张配图…</span>
+            <span class="demo-old">![需要配图]()</span>
             <span class="demo-arrow">→</span>
-            <span class="demo-new">![雨夜](rain-night.png)</span>
+            <span class="demo-new">![自动生成的雨夜意境图](img.png)</span>
           </div>
-          <span class="cap-cta">查看演示 ›</span>
+          <span class="cap-cta">查看功能 ›</span>
         </article>
       </div>
     </section>
 
     <!-- PET -->
     <section id="pet" class="pet-section">
-      <p class="kicker">写作伙伴</p>
-      <h2 class="feature-title">是好用的工具，<br/>更是长情的伙伴。</h2>
-      <p class="feature-sub center">它感知你的节奏。你伏案疾书，它陪伴思索；你停笔小憩，它亦安然入眠。在这漫长孤独的写作旅程中，你不再是一个人。</p>
+      <p class="kicker">情感陪伴</p>
+      <h2 class="feature-title">是高效工具，<br/>也是贴心桌宠。</h2>
+      <p class="feature-sub center">它能感知你的状态。写作时思考，休息时小憩。在孤独的创作时光里，给你一份安静的陪伴。</p>
       <div class="pet-states">
         <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>idle</figcaption></figure>
-        <figure><div class="ps sleeping"><img src="./assets/avatar.png" alt="" /><span class="z">z</span></div><figcaption>sleeping</figcaption></figure>
-        <figure><div class="ps thinking"><img src="./assets/avatar.png" alt="" /><span class="dots"><i></i><i></i><i></i></span></div><figcaption>thinking</figcaption></figure>
-        <figure><div class="ps curious"><img src="./assets/avatar.png" alt="" /></div><figcaption>curious</figcaption></figure>
-        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /><span class="plus">+</span></div><figcaption>happy</figcaption></figure>
-        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /><span class="qm">?</span></div><figcaption>concerned</figcaption></figure>
+        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>sleeping</figcaption></figure>
+        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>thinking</figcaption></figure>
+        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>curious</figcaption></figure>
+        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>happy</figcaption></figure>
+        <figure><div class="ps"><img src="./assets/avatar.png" alt="" /></div><figcaption>concerned</figcaption></figure>
       </div>
     </section>
 
     <!-- DOWNLOAD -->
     <section id="download" class="download">
-      <p class="kicker">开启旅程</p>
-      <h2 class="feature-title">开启你的<br/>全新写作旅程。</h2>
-      <p class="feature-sub center">胖丁已准备就绪，期待与你相遇。<br/>macOS 11 或更高版本。免费。</p>
+      <p class="kicker">免费获取</p>
+      <h2 class="feature-title">立即下载，<br/>开启创作。</h2>
+      <p class="feature-sub center">支持 macOS 11 或更高版本。</p>
       <div class="download-actions">
-        <button
-          id="downloadMac"
-          type="button"
-          class="btn-pill"
-          data-download-endpoint="https://api.123offer.cn/fatding/api/public/desktop/latest?platform=macos&channel=stable"
-        >立即下载 macOS 版</button>
+        <button id="downloadMac" class="btn-pill" data-download-endpoint="https://api.123offer.cn/fatding/api/public/desktop/latest?platform=macos&channel=stable">
+          下载 macOS 版 (Universal)
+        </button>
       </div>
-      <p class="download-meta" id="downloadMeta">同时支持 Apple Silicon 与 Intel</p>
-      <p class="download-error" id="downloadError" role="status" aria-live="polite" hidden></p>
       <dl class="specs">
-        <div><dt>系统</dt><dd>macOS 11+</dd></div>
-        <div><dt>大小</dt><dd id="downloadSize">获取中</dd></div>
-        <div><dt>价格</dt><dd>免费下载</dd></div>
+        <div><dt>当前版本</dt><dd>v1.2.0</dd></div>
+        <div><dt>文件大小</dt><dd id="downloadSize">获取中</dd></div>
+        <div><dt>软件价格</dt><dd>免费</dd></div>
       </dl>
     </section>
   </main>
@@ -275,26 +257,30 @@
     <div class="footer-inner">
       <div class="footer-cols">
         <div>
-          <h4>胖丁</h4>
-          <a href="#features">灵感</a>
-          <a href="#ai">雕琢</a>
-          <a href="#download">下载</a>
+          <h4>产品</h4>
+          <a href="#features">功能特性</a>
+          <a href="#ai">AI 写作</a>
+          <a href="#pet">桌宠互动</a>
+        </div>
+        <div>
+          <h4>下载</h4>
+          <a href="#download">macOS 版</a>
+          <a href="#">更新日志</a>
         </div>
         <div>
           <h4>资源</h4>
-          <a href="#">更新日志</a>
           <a href="#">使用文档</a>
-          <a href="#">反馈</a>
+          <a href="#">常见问题</a>
         </div>
         <div>
           <h4>关于</h4>
-          <a href="#">隐私</a>
-          <a href="#">服务条款</a>
+          <a href="#">反馈建议</a>
+          <a href="#">隐私条款</a>
         </div>
       </div>
       <div class="footer-meta">
-        <span>© <span id="year"></span> 胖丁</span>
-        <span>Made with ♥ on macOS</span>
+        <span>© <span id="year"></span> 胖丁 团队</span>
+        <span>Made for writers on macOS</span>
       </div>
     </div>
   </footer>
@@ -312,7 +298,7 @@
 
   <!-- ============ Mockup templates ============ -->
   <template id="mock-polish">
-    <div class="mock-meta"><span class="mock-tag">推敲词句</span><h3 id="modalTitle">保留原句语气，让表达更自然</h3></div>
+    <div class="mock-meta"><span class="mock-tag">智能润色</span><h3 id="modalTitle">优化表达，让文字更自然</h3></div>
     <div class="mock-win">
       <div class="mock-bar"><span></span><span></span><span></span><em>关于雨夜.md</em></div>
       <div class="mock-page">
@@ -328,11 +314,11 @@
           <button>配图</button>
         </div>
         <div class="mock-popover">
-          <header><span class="dot-yellow"></span>润色建议</header>
-          <p>城市像一张被雨泡软的纸，连灯光都洇开了。</p>
+          <header><span class="dot-yellow"></span>智能建议</header>
+          <p>城市像一张被雨泡软的纸，灯光在雾气中漫开。</p>
           <footer>
-            <button class="primary">采用建议</button>
-            <button>换个说法</button>
+            <button class="primary">采用</button>
+            <button>重试</button>
           </footer>
         </div>
       </div>
@@ -340,7 +326,7 @@
   </template>
 
   <template id="mock-summary">
-    <div class="mock-meta"><span class="mock-tag">提纲挈领</span><h3 id="modalTitle">拨云见日，萃取真义</h3></div>
+    <div class="mock-meta"><span class="mock-tag">提取摘要</span><h3 id="modalTitle">快速提炼核心要点</h3></div>
     <div class="mock-win">
       <div class="mock-bar"><span></span><span></span><span></span><em>会议纪要.md</em></div>
       <div class="mock-page">
@@ -355,11 +341,11 @@
           <button>配图</button>
         </div>
         <div class="mock-popover wide">
-          <header><span class="dot-yellow"></span>核心要点</header>
+          <header><span class="dot-yellow"></span>核心摘要</header>
           <ul>
-            <li>本周敲定了胖丁选区工具栏的视觉与四个核心入口。</li>
-            <li>下阶段聚焦服务端额度、降级与多模型灰度。</li>
-            <li>12 月初进入小范围 beta，官网原型同步推进。</li>
+            <li>敲定了选区工具栏视觉与四个 AI 功能入口。</li>
+            <li>下阶段聚焦服务端额度统计与多模型灰度方案。</li>
+            <li>12 月初开启小范围 Beta 测试。</li>
           </ul>
         </div>
       </div>
@@ -367,13 +353,13 @@
   </template>
 
   <template id="mock-title">
-    <div class="mock-meta"><span class="mock-tag">画龙点睛</span><h3 id="modalTitle">懂你所写，起个惊艳的开场</h3></div>
+    <div class="mock-meta"><span class="mock-tag">自动标题</span><h3 id="modalTitle">懂你所写，一键生成标题</h3></div>
     <div class="mock-win">
       <div class="mock-bar"><span></span><span></span><span></span><em>未命名草稿.md</em></div>
       <div class="mock-page">
         <h4 class="placeholder"># 未命名草稿</h4>
         <p>窗外的雨从傍晚一直下到现在。城市像被泡软的纸。</p>
-        <p>我泡了一杯热茶，敲下今天的第一行字。<mark class="mock-sel">想了很久，怎么开头都不对。</mark></p>
+        <p>我泡了一杯热茶，敲下今天的第一行文字。<mark class="mock-sel">想了很久，怎么开头都不对。</mark></p>
         <div class="mock-toolbar">
           <span class="mock-pet"><img src="./assets/avatar.png" alt=""/></span>
           <span class="mock-divider"></span>
@@ -383,10 +369,10 @@
           <button>配图</button>
         </div>
         <div class="mock-popover">
-          <header><span class="dot-yellow"></span>推荐标题</header>
+          <header><span class="dot-yellow"></span>标题建议</header>
           <ol class="mock-titles">
-            <li class="chosen">关于雨夜，和一杯泡软的茶</li>
-            <li>城市被雨泡软的那个傍晚</li>
+            <li class="chosen">关于雨夜的灵感片段</li>
+            <li>被雨泡软的那个傍晚</li>
             <li>晚来的雨，迟到的字</li>
           </ol>
         </div>
@@ -395,22 +381,17 @@
   </template>
 
   <template id="mock-image">
-    <div class="mock-meta"><span class="mock-tag">文墨生香</span><h3 id="modalTitle">化无形为有形，为文字染上色彩</h3></div>
+    <div class="mock-meta"><span class="mock-tag">一键配图</span><h3 id="modalTitle">根据内容自动生成插图</h3></div>
     <div class="mock-win">
       <div class="mock-bar"><span></span><span></span><span></span><em>关于雨夜.md</em></div>
       <div class="mock-page">
         <h4># 关于雨夜</h4>
         <p>窗外的雨从傍晚一直下到现在。城市像被泡软的纸。</p>
         <div class="mock-image">
-          <div class="mock-image-art" aria-hidden="true">
-            <span class="cloud cloud-1"></span>
-            <span class="cloud cloud-2"></span>
-            <span class="rain"></span>
-            <span class="window-light"></span>
-          </div>
+          <div class="mock-image-art" aria-hidden="true"></div>
           <code class="mock-code">![雨夜](rain-night.png)</code>
         </div>
-        <p>我泡了一杯热茶，敲下今天的第一行字。<span class="mock-cursor"></span></p>
+        <p>我泡了一杯热茶，敲下今天的第一行文字。<span class="mock-cursor"></span></p>
         <div class="mock-toolbar">
           <span class="mock-pet"><img src="./assets/avatar.png" alt=""/></span>
           <span class="mock-divider"></span>
